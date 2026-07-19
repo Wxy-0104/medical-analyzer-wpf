@@ -1,0 +1,42 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# .NET
+artifacts/
+TestResults/
+*.nupkg
+*.snupkg
+
+# JetBrains
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local tools and temporary files
+.dotnet-cli/
+*.tmp
+*.log
+
+# Private or local data
+appsettings.Local.json
+data/
