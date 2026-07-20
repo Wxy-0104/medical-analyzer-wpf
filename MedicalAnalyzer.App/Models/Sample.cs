@@ -22,7 +22,7 @@ namespace MedicalAnalyzer.App.Models
             SampleStatus.Measuring => "測定中",
             SampleStatus.Completed => "完了",
             SampleStatus.Error => "エラー",
-            SampleStatus.Cancaled => "中止"
+            SampleStatus.Cancelled => "中止"
         };
 
 

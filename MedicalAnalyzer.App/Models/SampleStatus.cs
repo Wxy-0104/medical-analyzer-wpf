@@ -14,6 +14,6 @@ namespace MedicalAnalyzer.App.Models
         Measuring,       //測定中
         Completed,　　　 //完了
         Error,　　　　　//エラー
-        Cancaled　　　　//中止
+        Cancelled　　　　//中止
     }
 }

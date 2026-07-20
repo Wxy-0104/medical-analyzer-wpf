@@ -139,6 +139,11 @@
                                                 Binding="{Binding TestItem}"
                                                 Width="*" />
 
+                            <DataGridTextColumn Header="状態"
+                                                Binding="{Binding SampleText}"
+                                                Width="120" />
+
+
                             <DataGridTextColumn Header="登録時刻"
                                                 Binding="{Binding RegisteredAt,StringFormat={}{0:HH:mm}}"
                                                 Width="120" />
