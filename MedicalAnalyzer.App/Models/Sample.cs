@@ -15,6 +15,16 @@ namespace MedicalAnalyzer.App.Models
         public DateTime RegisteredAt { get; set; } = DateTime.Now;
         public int Progress { get; set; }
 
-     
+
+        public string SampleText => Status switch
+        {
+            SampleStatus.Registered => "受付済み",
+            SampleStatus.Measuring => "測定中",
+            SampleStatus.Completed => "完了",
+            SampleStatus.Error => "エラー",
+            SampleStatus.Cancaled => "中止"
+        };
+
+
     }
 }

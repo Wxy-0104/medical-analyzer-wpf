@@ -107,23 +107,30 @@
                     CornerRadius="8"
                     Padding="20">
 
-                <StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
 
-                    <TextBlock Text="検体一覧"
+                    <TextBlock Grid.Row="0"
+                               Text="検体一覧"
                                FontSize="20"
                                FontWeight="SemiBold"
                                Margin="0,0,0,16" />
 
-                    <TextBlock Text="登録された検体はありません"
+                    <!--<TextBlock Text="登録された検体はありません"
                                Foreground="#667085"
-                               FontSize="16" />
+                               FontSize="16" />-->
 
                     <DataGrid Grid.Row="1"
                               ItemsSource="{Binding Samples}"
                               AutoGenerateColumns="False"
-                              IsReadOnly="True">
+                              IsReadOnly="True"
+                              CanUserAddRows="False">
 
                         <DataGrid.Columns>
+
                             <DataGridTextColumn Header="検体ID"
                                                 Binding="{Binding Id}"
                                                 Width="110" />
@@ -133,18 +140,19 @@
                                                 Width="*" />
 
                             <DataGridTextColumn Header="登録時刻"
-                                                Binding="{Binding RegisteredAt,
-                                                      StringFormat={}{0:HH:mm}}"
+                                                Binding="{Binding RegisteredAt,StringFormat={}{0:HH:mm}}"
                                                 Width="120" />
 
                             <DataGridTextColumn Header="進捗"
-                                                Binding="{Binding Progress,
-                                                      StringFormat={}{0}%}"
+                                                Binding="{Binding Progress,StringFormat={}{0}%}"
                                                 Width="80" />
+
                         </DataGrid.Columns>
+
                     </DataGrid>
 
-                </StackPanel>
+                </Grid>
+
 
             </Border>
 
