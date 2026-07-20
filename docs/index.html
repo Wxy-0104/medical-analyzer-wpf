@@ -121,11 +121,14 @@
         <h2>現在の実装</h2>
 
         <ul>
-          <li>装置状態の表示</li>
+          <li>装置状態とシステム状態の表示</li>
           <li>検体操作パネル</li>
-          <li>検体一覧の空状態</li>
-          <li>操作可否に応じたボタン制御</li>
-          <li>ウィンドウサイズに追従するレイアウト</li>
+          <li>C#による検体データモデル</li>
+          <li>ObservableCollectionによるデータ管理</li>
+          <li>DataContextとBindingによる画面表示</li>
+          <li>DataGridによる検体一覧</li>
+          <li>登録時刻と進捗の書式設定</li>
+          <li>一覧のソートおよび編集制限</li>
         </ul>
       </section>
 
@@ -145,11 +148,12 @@
         <h2>今後の予定</h2>
 
         <ul>
-          <li>C#データモデル</li>
-          <li>データバインディング</li>
-          <li>MVVM</li>
-          <li>入力検証</li>
+          <li>INotifyPropertyChangedによる変更通知</li>
+          <li>MVVMへの移行</li>
+          <li>Commandによる操作処理</li>
+          <li>検体登録と入力検証</li>
           <li>測定状態と非同期処理</li>
+          <li>単体テスト</li>
         </ul>
       </section>
     </main>
